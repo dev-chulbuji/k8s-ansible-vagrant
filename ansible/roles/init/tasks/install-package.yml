@@ -1,0 +1,8 @@
+---
+- name: Install packages that allow apt to be used over HTTPS
+  yum:
+    name: "{{ packages }}"
+    state: present
+  vars:
+    packages:
+      - ca-certificates

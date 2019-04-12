@@ -1,0 +1,1 @@
+kubeadm join 192.168.50.10:6443 --token ezq438.muv55iufoxes35rv     --discovery-token-ca-cert-hash sha256:071351615747d1cea15c98942f5d5cc218273bee4d182c619585b9fb06de850c 

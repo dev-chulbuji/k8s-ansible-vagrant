@@ -1,0 +1,11 @@
+---
+- name: Enable update ca plugin
+  command: update-ca-trust force-enable
+
+- name: Install SomansaRootCA
+  copy:
+    src: ./SomansaRootCA.crt
+    dest: /etc/pki/ca-trust/source/anchors/SomansaRootCA.crt
+
+- name: Update ca
+  command: update-ca-trust extract

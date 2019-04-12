@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: true
+  roles:
+    - certificate
+    - init
+    - docker
+    - kubernetes
+    - kubernetes-node
+
+  handlers:
+    - name: docker status
+      service: name=docker state=started

@@ -1,0 +1,4 @@
+---
+- name: Install etcd instance
+  become: false
+  command: kubectl create -f https://docs.projectcalico.org/v3.5/getting-started/kubernetes/installation/hosted/etcd.yaml

@@ -1,0 +1,5 @@
+---
+- include: init-cluster.yml
+#- include: install-etcd.yml
+- include: install-calico.yml
+- include: generate-join-command.yml
